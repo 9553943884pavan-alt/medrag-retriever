@@ -6,6 +6,6 @@ setup(
     packages=find_packages(),
     install_requires=[
         "langchain-core", "langchain-huggingface", "qdrant-client",
-        "sentence-transformers", "fastembed", "pydantic", "transformers", "torch"
+        "sentence-transformers", "fastembed", "pydantic", "transformers", "torch","bitsandbytes"
     ]
 )
