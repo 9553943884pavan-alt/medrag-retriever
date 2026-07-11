@@ -13,7 +13,7 @@ class HybridMedRAGRetriever(BaseRetriever):
     reranker: object = Field(..., description= "Rerank the Retrieved documents based How relevant to Query")
     collection_name: str = Field(default="medrag_textbooks")
     top_k_fetch: int = Field(default=20)
-    top_n_final: int = Field(default=5)
+    top_n_final: int = Field(default=3)
     min_rerank_score: float = Field(default=0.25)
 
     class Config:
