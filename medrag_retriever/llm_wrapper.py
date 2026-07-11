@@ -4,7 +4,7 @@ from langchain_huggingface import HuggingFacePipeline, ChatHuggingFace
 from transformers import BitsAndBytesConfig
 
 
-def build_llm(model_id: str = "microsoft/Phi-3.5-mini-instruct", max_new_tokens: int = 512, temperature: float = 0.1):
+def build_llm(model_id: str = "microsoft/Phi-3.5-mini-instruct", max_new_tokens: int = 300, temperature: float = 0.1):
     tokenizer = AutoTokenizer.from_pretrained(model_id)
     bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
